@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Opdrachten JDBC en Spring</title>
+</head>
+<body>
+	<h1>Print greeting</h1>
+	<form action="/greeting">
+		<table>
+			<tr>
+				<td>Geef je voornaam:</td>
+				<td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td>Geef je achternaam:</td>
+				<td><input type="text" name="lastName"></td>
+			</tr>
+			<tr>
+				<td>Klik om te versturen</td>
+				<td><input type="submit" value="Verzenden"></td>
+			</tr>
+		</table>
+	</form>
+	<p>
+	<h1>Opgave 1: Sum of 2 numbers</h1>
+	<form action="/sum" method="post">
+		<table>
+			<tr>
+				<td>Geef het eerste getal:</td>
+				<td><input type="number" name="getal1"></td>
+			</tr>
+			<tr>
+				<td>Geef het tweede getal:</td>
+				<td><input type="number" name="getal2"></td>
+
+			</tr>
+			<tr>
+				<td>Klik om te versturen</td>
+				<td><input type="submit" value="Verzenden"></td>
+			</tr>
+		</table>
+	</form>
+	<h1>Opgave 2: HR-database</h1>
+	<form action="/department" method="post">
+		<table>
+			<tr>
+				<td>Geef department name:</td>
+				<td><input type="text" name="departmentName"></td>
+			</tr>
+
+			<tr>
+				<td>Klik om te versturen</td>
+				<td><input type="submit" value="Verzenden"></td>
+			</tr>
+		</table>
+	</form>
+
+	<h1>Opgave 3: HR-database</h1>
+	<form action="/updateemployee" method="post">
+		<table>
+			<tr>
+				<td>Geef de achternaam van een medewerker:</td>
+				<td><input type="text" name="lastName"></td>
+			</tr>
+
+			<tr>
+				<td>Geef de employee id van een andere medewerker:</td>
+				<td><input type="number" name="employeeId"></td>
+			</tr>
+
+			<tr>
+				<td>Klik om te versturen</td>
+				<td><input type="submit" value="Verzenden"></td>
+		</table>
+	</form>
+</body>
+</html>

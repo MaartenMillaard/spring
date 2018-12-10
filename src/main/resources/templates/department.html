@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Opgave 2: Departments</title>
+</head>
+<body>
+<p th:text="'the number of employees in department ' + ${departmentName} + ' is ' + ${numEmployees}">
+<p>
+<table>
+    <tr th:each="s : ${salaries}">
+        <td th:text="${s.last_name}"></td>
+        <td th:text="${s.salary}"></td>
+    </tr>
+</table>
+</body>
+</html>
